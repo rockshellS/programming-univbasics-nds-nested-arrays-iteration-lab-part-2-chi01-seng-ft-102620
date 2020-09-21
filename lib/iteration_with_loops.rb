@@ -6,6 +6,13 @@ def find_min_in_nested_arrays(src)
     small_number_element = ""
     while element_index < find_min_in_nested_arrays[row_index].count do
       if find_min_in_nested_arrays[row_index][element_index].min > new_smallest_array
+        new_smallest_array = find_min_in_nested_arrays[row_index][element_index]
+      end
+      element_index += 1
+    end
+    new_smallest_array << small_number_element
+    row_index += 1
+    
   # src will be an array of arrays of integers
   # Produce a new Array that contains the smallest number of each of the nested arrays
 
